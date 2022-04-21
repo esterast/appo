@@ -1,5 +1,11 @@
 header {
-    background-color: #342934;
+    /* background-color: #342934; */
+    background-image: url("../images/banner-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    position: relative;
 }
 
 .navbar-mobile {
@@ -7,6 +13,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 0;
+    position: relative;
+    z-index: 3;
+    border-bottom: 2px solid #fff;
 }
 
 .nav-menu {
@@ -16,6 +25,10 @@ header {
 
 .collapse-btn {
     width: 30px;
+}
+
+.collapse-btn:hover {
+    cursor: pointer;
 }
 
 .collapse-btn img {
@@ -31,7 +44,7 @@ header {
     list-style-type: none;
     margin: 0;
     padding: 15px;
-    background-color: #342934;
+    background-color: rgba(000, 000, 000, 0.8);
 }
 
 .nav-item {
@@ -45,4 +58,62 @@ header {
 
 .open {
     display: block;
+}
+
+/* banner styles */
+.banner {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.banner h1 {
+    font-size: 40px;
+    color: #fff;
+}
+
+.banner p {
+    color: #fff;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 20px;
+}
+
+.banner-img {
+    display: none;
+}
+
+/* Desktop breakpoint  */
+@media only screen and (min-width: 900px) {
+    .buttons {
+        flex-direction: row;
+    }
+
+    .banner {
+        height: auto;
+        margin-top: 200px;
+    }
+
+    .banner-img {
+        display: block;
+        position: absolute;
+        right: 20px;
+        bottom: -100px;
+    }
+
+    .banner-components {
+        max-width: 500px;
+    }
+
+    h1,
+    p,
+    .buttons {
+        margin: 50px 0;
+    }
+
 }

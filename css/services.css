@@ -1,0 +1,24 @@
+.service-item {
+    width: calc(100% - 60px);   
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px 5px #c8c8c8;
+    border-radius: 10px;
+}
+
+.service-item p {
+    color: #a5b0c7;
+    margin: 0;
+}
+
+
+@media only screen and (min-width: 900px) {
+    .service-items {
+        display: flex;
+    }
+
+    .service-item {
+        width: calc(25% - 60px);
+    }
+}
