@@ -40,6 +40,9 @@ section {
     padding: 0 15px;
 }
 
+.small-content {
+    max-width: 600px;
+}
 .wrapper {
     position: absolute;
     top: 0;
@@ -47,4 +50,31 @@ section {
     left: 0;
     right: 0;
     background-color: rgba(000, 000, 000, 0.5);
+}
+
+.block {
+    width: 100%;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-left {
+    text-align: start;
+}
+
+.text-right {
+    text-align: end;
+}
+
+.text-center {
+    text-align: center;
+}
+
+@media only screen and (min-width: 900px) {
+    .block {
+        width: 50%;
+    }
 }

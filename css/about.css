@@ -1,0 +1,38 @@
+.about {
+    background-color: #f5f6fa;
+}
+
+.about-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.about-bg {
+    background-image: url('../images/banner-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media only screen and (min-width: 900px) {
+    .about {
+        display: flex;
+    }
+
+    .about-extra-height {
+        margin: -100px 0;
+    }
+
+    .about-bg {
+        height: 100%;
+    }
+
+    .about-content,
+    .about-content h2 {
+        text-align: start;
+    }
+
+    .about-content {
+        padding-left: 100px;
+    }
+}
